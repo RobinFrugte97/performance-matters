@@ -2,138 +2,16 @@
 <html lang="en">
 <head>
     {% include './app-meta.html' %}
-    <style>
-    html {
-      -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-    }
-    body {
-      margin: 0;
-    }
-    a {
-      background-color: transparent;
-    }
-    hr {
-      height: 0;
-      -webkit-box-sizing: content-box;
-      -moz-box-sizing: content-box;
-      box-sizing: content-box;
-    }
-    .v4-tease {
-      display: block;
-      padding: 15px 20px;
-      font-weight: bold;
-      color: #fff;
-      text-align: center;
-      background-color: #0275d8;
-    }
-    .bs-docs-nav {
-      margin-bottom: 0;
-      background-color: #fff;
-      border-bottom: 0;
-    }
-    .navbar-static-top {
-      z-index: 1000;
-      border-width: 0 0 1px;
-    }
-    .navbar {
-      position: relative;
-      min-height: 50px;
-      margin-bottom: 20px;
-      border: 1px solid transparent;
-    }
-    .bs-docs-masthead {
-      position: relative;
-      padding: 30px 0;
-      color: #cdbfe3;
-      text-align: center;
-      text-shadow: 0 1px 0 rgba(0,0,0,.1);
-      background-color: #6f5499;
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#563d7c), to(#6f5499));
-      background-image: -webkit-linear-gradient(top, #563d7c 0%, #6f5499 100%);
-      background-image:      -o-linear-gradient(top, #563d7c 0%, #6f5499 100%);
-      background-image:         linear-gradient(to bottom, #563d7c 0%, #6f5499 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
-      background-repeat: repeat-x;
-    }
-    .container {
-      padding-right: 15px;
-      padding-left: 15px;
-      margin-right: auto;
-      margin-left: auto;
-    }
-    .bs-docs-booticon {
-      display: block;
-      font-weight: 500;
-      color: #fff;
-      text-align: center;
-      cursor: default;
-      background-color: #563d7c;
-      border-radius: 15%;
-    }
-    .bs-docs-booticon-lg {
-      width: 144px;
-      height: 144px;
-      font-size: 108px;
-      line-height: 140px;
-    }
-    .bs-docs-booticon-outline {
-      background-color: transparent;
-      border: 1px solid #cdbfe3;
-    }
-    .bs-docs-masthead .lead {
-      margin: 0 auto 30px;
-      font-size: 20px;
-      color: #fff;
-    }
-    .bs-docs-masthead .version {
-      margin-top: -15px;
-      margin-bottom: 30px;
-      color: #9783b9;
-    }
-    .bs-docs-masthead .btn {
-      width: 100%;
-      padding: 15px 30px;
-      font-size: 20px;
-    }
-    .btn-outline-inverse {
-      color: #fff;
-      background-color: transparent;
-      border-color: #cdbfe3;
-    }
-    .btn {
-      display: inline-block;
-      padding: 6px 12px;
-      margin-bottom: 0;
-      font-size: 14px;
-      font-weight: normal;
-      line-height: 1.42857143;
-      text-align: center;
-      white-space: nowrap;
-      vertical-align: middle;
-      -ms-touch-action: manipulation;
-      touch-action: manipulation;
-      cursor: pointer;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      background-image: none;
-      border: 1px solid transparent;
-      border-radius: 4px;
-    }
-
-    </style>
-
+    <link href="/dist/css/fonts.css" rel="stylesheet">
+    <link href="/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/css/src/docs.css" rel="stylesheet">
     {% block head_extra %}{% endblock %}
 </head>
 
 <body {% block body_attributes %}{% endblock %}>
 
     {% block body %}{% endblock %}
-    <link href="/dist/css/fonts.css" rel="stylesheet">
-    <link href="/dist/css/bootstrap.css" rel="stylesheet">
-    <link href="/assets/css/src/docs.css" rel="stylesheet">
+
     <script src="/assets/js/vendor/jquery.min.js" ></script>
     <script src="/dist/js/bootstrap.js" ></script>
     <script src="/assets/js/docs.min.js" async></script>
